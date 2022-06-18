@@ -1,0 +1,25 @@
+@media(max-width:425px){
+    .menu li a{
+        font-size: 35px;
+        display: flex;
+        
+    
+    }
+
+    .sobre{
+        height: 250vh;
+    }
+
+    .historia{
+        background-image: none;
+        grid-template-columns: 100%;
+    }
+
+
+    .cultura{
+        height: 900vh;
+    }
+    .cultura .fotos{
+        justify-content: center;
+    }
+}

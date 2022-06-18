@@ -1,0 +1,182 @@
+body{
+    
+    color: white;
+    display: grid;
+    grid-template-areas: 
+    "home"
+    "sobre"
+    "historia"
+    "fotos"
+    "cultura";
+    grid-template-columns: repeat(1, 1fr);
+    font-family: 'Anek Latin', sans-serif;
+
+}
+
+.home{
+    grid-area: home;
+    background: url(fundo1.jpg) center center  no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.home .menu{
+    
+    margin: 50px 20px;
+    font-size: 24px;
+    
+}
+.home .menu li{
+    margin-top: 5px;
+    
+
+}
+
+.home .menu li a{
+    transition: 0.2s;
+}
+
+
+.home .menu li a:hover{
+    text-decoration: line-through brown 2px ;
+    font-size: 22px;
+}
+
+.home:after{
+    content: url(seta_preta.png);
+    position: absolute;
+    height: 35px;
+    bottom: 40px;
+    right: 50%;
+    left: 50%;
+    animation: downarrow 0.6s infinite alternate ease-in-out;
+}
+
+@-webkit-keyframes downarrow{
+    0%{
+        -webkit-transform: translateY(0);
+        opacity: 0.4;
+    }
+    100%{
+        -webkit-transform: translateY(0.4em);
+        opacity: 0.9;
+    }
+}
+
+
+
+
+.sobre{
+    grid-area: sobre;
+    background-color: rgb(20, 17, 17);
+    height: 100vh;
+}
+
+.sobre h1{
+    text-align: center;
+    margin: 25px;
+    font-size: 30px;
+    color: bisque;
+}
+
+.sobre p{
+    text-align: justify;
+    font-size: 20px;
+    margin: 35px;
+    color: bisque;
+}
+
+.historia{
+    grid-area: historia;
+    background: url(historiajapao.jpg) center center no-repeat;
+    background-size: cover;
+    height: 110vh;
+    display: grid;
+    grid-template-areas: 
+    "historia . .";
+    grid-template-columns: 33%;
+
+}
+
+.historiadojapao{
+    grid-area: historia;
+    color: black;
+    text-align: justify;
+    margin: 20px;
+
+}
+
+.historiadojapao .titulo{
+    text-align: center;
+    margin: 15px;
+
+}
+
+/* .fotos{
+    grid-area: fotos;
+    text-align: center;
+    background:linear-gradient( to bottom, rgb(41, 40, 40), black)
+    
+}
+
+.foto{
+    
+    width: 70%;
+    
+} */
+
+.cultura{
+    grid-area: cultura;
+    background: linear-gradient( to top, rgb(56, 54, 54), black);
+    height: 250vh;
+
+}
+
+.cultura h2{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.cultura .fotos{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 60px 30px;
+}
+
+.cultura .fotos .foto{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    transition: 0.5s;
+    
+    
+}
+
+.cultura .fotos .foto:hover{
+    
+    transform: translateY(15px);
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+
+.cultura .fotos img{
+    border: 2px solid white;
+    width: 100%;
+    
+}
+
+.cultura p{
+    text-align: justify;
+    font-size: 20px;
+    margin: 35px;
+    color: #fff
+}
+
+
+
+
+
+
