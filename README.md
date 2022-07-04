@@ -4,7 +4,7 @@ Neste projeto foi aplicado algumas propriedades display grid do css que venho ap
 
 Em construção...</p>
 
-<p>Tecnologias Utilizadas </p>
+<p>Tecnologias Utilizadas: </p>
 -HTML
 <br>
 -CSS
